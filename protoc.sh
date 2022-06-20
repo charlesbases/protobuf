@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-dir="google/protobuf/extend/"
+dir="google/protobuf/extends/"
 files=`ls ${dir} | grep '.proto'`
 
 for i in ${files}; do

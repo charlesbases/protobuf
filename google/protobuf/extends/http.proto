@@ -8,7 +8,7 @@ option cc_enable_arenas = true;
 option go_package = "github.com/charlesbases/protobuf/types/httppb;httppb";
 option java_multiple_files = true;
 option java_outer_classname = "HttpProto";
-option java_package = "com.google.protobuf.extend";
+option java_package = "com.google.protobuf.extends";
 option objc_class_prefix = "GEXT";
 
 message Http {
@@ -28,5 +28,5 @@ message Http {
 }
 
 extend google.protobuf.MethodOptions {
-  Http http = 1995;
+  Http http = 1996;
 }

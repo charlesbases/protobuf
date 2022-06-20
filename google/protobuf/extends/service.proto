@@ -8,7 +8,7 @@ option cc_enable_arenas = true;
 option go_package = "github.com/charlesbases/protobuf/types/servicepb;servicepb";
 option java_multiple_files = true;
 option java_outer_classname = "ServiceProto";
-option java_package = "com.google.protobuf.extend";
+option java_package = "com.google.protobuf.extends";
 option objc_class_prefix = "GEXT";
 
 message Service {
@@ -23,5 +23,5 @@ message ServiceHeader {
 }
 
 extend google.protobuf.ServiceOptions {
-  Service service = 1995;
+  Service srv = 1995;
 }
