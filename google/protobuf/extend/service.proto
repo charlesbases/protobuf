@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package google.protobuf.extend;
+
+import "google/protobuf/descriptor.proto";
+
+option cc_enable_arenas = true;
+option go_package = "github.com/charlesbases/protobuf/types/servicepb;servicepb";
+option java_multiple_files = true;
+option java_outer_classname = "ServiceProto";
+option java_package = "com.google.protobuf.extend";
+option objc_class_prefix = "GEXT";
+
+message Service {
+  string host = 1;
+  string name = 2;
+  string desc = 3;
+  ServiceHeader header = 4;
+}
+
+message ServiceHeader {
+  string auth = 1;
+}
+
+extend google.protobuf.ServiceOptions {
+  Service service = 1995;
+}
