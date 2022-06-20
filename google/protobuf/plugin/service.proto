@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package google.protobuf.extends;
+package google.protobuf.plugin;
 
 import "google/protobuf/descriptor.proto";
 
@@ -8,8 +8,8 @@ option cc_enable_arenas = true;
 option go_package = "github.com/charlesbases/protobuf/types/servicepb;servicepb";
 option java_multiple_files = true;
 option java_outer_classname = "ServiceProto";
-option java_package = "com.google.protobuf.extends";
-option objc_class_prefix = "GEXT";
+option java_package = "com.google.protobuf.plugin";
+option objc_class_prefix = "GAPI";
 
 message Service {
   string host = 1;
@@ -19,7 +19,7 @@ message Service {
 }
 
 message ServiceHeader {
-  string auth = 1;
+  string authorization = 1;
 }
 
 extend google.protobuf.ServiceOptions {
