@@ -14,8 +14,7 @@ option objc_class_prefix = "GAPI";
 message Service {
   string host = 1;
   string name = 2;
-  string desc = 3;
-  ServiceHeader header = 4;
+  ServiceHeader header = 3;
 }
 
 message ServiceHeader {
@@ -23,5 +22,5 @@ message ServiceHeader {
 }
 
 extend google.protobuf.ServiceOptions {
-  Service srv = 1995;
+  Service srv = 199510;
 }

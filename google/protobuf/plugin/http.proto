@@ -19,14 +19,12 @@ message Http {
     string delete = 4;
   }
 
-  // rpc desc
-  string desc = 5;
   // content-type for request
-  string consume = 6;
+  string consume = 5;
   // content-type for response
-  string produce = 7;
+  string produce = 6;
 }
 
 extend google.protobuf.MethodOptions {
-  Http http = 1996;
+  Http http = 199522;
 }
